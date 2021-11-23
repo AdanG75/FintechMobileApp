@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/ivStartActivityExtendsLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/middle_margin"
+        android:src="@drawable/extends_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/tvStartActivityFirstTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:text="@string/first_question"
+        android:textColor="@color/mate_white"
+        android:textSize="@dimen/main_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivStartActivityExtendsLogo">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivStartActivityPersonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_big_margin"
+        android:layout_marginTop="@dimen/big_middle_margin"
+        android:src="@drawable/ic_baseline_person_128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStartActivityFirstTitle">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivStartActivityMarketButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_middle_margin"
+        android:layout_marginEnd="@dimen/small_big_margin"
+        android:src="@drawable/ic_baseline_store_128"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStartActivityFirstTitle">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/person_text_margin"
+        android:text="@string/client_text"
+        android:textColor="@color/mate_white"
+        android:textSize="@dimen/big_icon_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivStartActivityPersonButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/market_text_margin"
+        android:text="@string/market_text"
+        android:textColor="@color/mate_white"
+        android:textSize="@dimen/big_icon_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivStartActivityPersonButton" />
+
+
+</android.support.constraint.ConstraintLayout>

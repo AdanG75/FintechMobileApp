@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginActivityClient">
+
+    <ImageView
+        android:id="@+id/ivLoginActivityClientExtendsLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/middle_margin"
+        android:src="@drawable/extends_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/etLoginActivityClientUsername"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_edit_text"
+        android:layout_marginStart="@dimen/big_middle_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:layout_marginEnd="@dimen/big_middle_margin"
+        android:background="@drawable/shape_edit_text"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/padding_edit_text"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/edit_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLoginActivityClientExtendsLogo" />
+
+    <EditText
+        android:id="@+id/etLoginActivityClientPassword"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_edit_text"
+        android:layout_marginStart="@dimen/big_middle_margin"
+        android:layout_marginTop="@dimen/middle_margin"
+        android:layout_marginEnd="@dimen/big_middle_margin"
+        android:background="@drawable/shape_edit_text"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/padding_edit_text"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/edit_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etLoginActivityClientUsername" />
+
+    <Button
+        android:id="@+id/bLoginActivityClientLogin"
+        android:layout_width="@dimen/big_width_button"
+        android:layout_height="@dimen/big_height_button"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/big_margin"
+        android:background="@drawable/shape_main_button"
+        android:enabled="false"
+        android:text="@string/sing_in"
+        android:textColor="@color/mate_white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etLoginActivityClientPassword" />
+
+    <Button
+        android:id="@+id/bLoginActivityClientSingUp"
+        android:layout_width="@dimen/middle_width_button"
+        android:layout_height="@dimen/middle_height_button"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/big_margin"
+        android:background="@drawable/shape_secondary_button"
+        android:enabled="false"
+        android:text="@string/sing_up"
+        android:textColor="@color/mate_white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bLoginActivityClientLogin" />
+
+    <TextView
+        android:id="@+id/tvLoginActivityClientForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/almost_big_margin"
+        android:text="@string/forgot_password"
+        android:textColor="@color/mate_white"
+        android:textSize="@dimen/h2_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bLoginActivityClientSingUp" />
+
+    <ProgressBar
+        android:id="@+id/pbLoginActivityClientLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/etLoginActivityClientPassword"
+        app:layout_constraintStart_toStartOf="@id/etLoginActivityClientPassword"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

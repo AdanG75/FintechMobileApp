@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="middle_margin">16dp</dimen>
+    <dimen name="almost_big_margin">24dp</dimen>
+    <dimen name="big_middle_margin">32dp</dimen>
+    <dimen name="small_big_margin">48dp</dimen>
+    <dimen name="big_margin">56dp</dimen>
+
+    <dimen name="person_text_margin">74dp</dimen>
+    <dimen name="market_text_margin">24dp</dimen>
+
+
+    <!-- Item sizes -->
+    <dimen name="height_edit_text">48dp</dimen>
+    <dimen name="big_width_button">160dp</dimen>
+    <dimen name="big_height_button">54dp</dimen>
+    <dimen name="middle_width_button">120dp</dimen>
+    <dimen name="middle_height_button">40dp</dimen>
+
+    <!-- Text sizes-->
+    <dimen name="main_title">32sp</dimen>
+    <dimen name="big_icon_title">24sp</dimen>
+    <dimen name="edit_text_size">18sp</dimen>
+    <dimen name="highlight_text">20sp</dimen>
+    <dimen name="h1_text">18sp</dimen>
+    <dimen name="h2_text">16sp</dimen>
+    <dimen name="h3_text">14sp</dimen>
+
+    <!-- Paddings -->
+    <dimen name="padding_edit_text">8dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="small_round_corner">6dp</dimen>
+</resources>
