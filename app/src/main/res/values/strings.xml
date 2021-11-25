@@ -16,5 +16,42 @@
     <string name="market_text">Establecimiento</string>
     <string name="sing_in">Ingresar</string>
     <string name="sing_up">Crear Cuenta</string>
+    <string name="save">Guardar</string>
     <string name="forgot_password">Olvidé mi contraseña</string>
+    <string name="market_name">Nombre del Establecimiento</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="type_market">Tipo de Comercio</string>
+    <string name="rfc">RFC* (Opcional)</string>
+    <string name="password">Contraseña</string>
+    <string name="branch_name">Nombre de la Sucursal</string>
+    <string name="hours_of_operation">Horario</string>
+    <string name="zip_code">Código Postal</string>
+    <string name="state">Estado</string>
+    <string name="city">Ciudad</string>
+    <string name="street">Calle</string>
+    <string name="outside_number">Número Exterior</string>
+    <string name="inner_number">Número Interior* (Opcional)</string>
+    <string name="client_name">Nombre(s)</string>
+    <string name="client_lastname">Apellido(s)</string>
+    <string name="date_of_birth">Fecha de nacimiento</string>
+    <string name="client_paypal">Cuenta PayPal* (Opcional)</string>
+    <string name="market_paypal">Cuenta PayPal</string>
+    <string name="catch_fingerprint">Capturar Huella</string>
+
+    <!-- underline strings -->
+    <string name="market_details"><u>Datos del Establecimiento</u></string>
+    <string name="paypal"><u>PayPal</u></string>
+    <string name="branch_details"><u>Datos de la Sucursal</u></string>
+    <string name="branch_address"><u>Dirección de la Sucursal</u></string>
+    <string name="client_details"><u>Datos Personales</u></string>
+    <string name="client_address"><u>Dirección</u></string>
+    <string name="fingerprint"><u>Huella Dactilar</u></string>
+
+    <!-- hint strings -->
+    <string name="hint_paypal">mypaypalemail@email.com</string>
+    <string name="hint_inner_number">Número Interior</string>
+    <string name="hint_zip_code">03511</string>
+    <string name="hint_hours">08:00 - 17:00</string>
+    <string name="hint_rfc">RFC</string>
+
 </resources>

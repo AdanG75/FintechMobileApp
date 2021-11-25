@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/main_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.FintechA75">
+        <activity android:name=".SingUpActivityMarket"></activity>
+        <activity android:name=".SingUpActivityClient" />
         <activity android:name=".LoginActivityMarket" />
         <activity android:name=".LoginActivityClient" />
         <activity android:name=".StartActivity" />
