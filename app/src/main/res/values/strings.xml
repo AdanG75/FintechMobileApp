@@ -37,6 +37,8 @@
     <string name="client_paypal">Cuenta PayPal* (Opcional)</string>
     <string name="market_paypal">Cuenta PayPal</string>
     <string name="catch_fingerprint">Capturar Huella</string>
+    <string name="registration">Registro</string>
+
 
     <!-- underline strings -->
     <string name="market_details"><u>Datos del Establecimiento</u></string>

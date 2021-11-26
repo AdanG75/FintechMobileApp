@@ -11,6 +11,7 @@
     <dimen name="big_middle_margin">32dp</dimen>
     <dimen name="small_big_margin">48dp</dimen>
     <dimen name="big_margin">56dp</dimen>
+    <dimen name="very_big_margin">64dp</dimen>
 
     <dimen name="person_text_margin">74dp</dimen>
     <dimen name="market_text_margin">24dp</dimen>
@@ -22,6 +23,7 @@
     <dimen name="big_height_button">54dp</dimen>
     <dimen name="middle_width_button">120dp</dimen>
     <dimen name="middle_height_button">40dp</dimen>
+    <dimen name="height_bar_app_icon">36dp</dimen>
 
     <!-- Text sizes-->
     <dimen name="main_title">32sp</dimen>

@@ -7,9 +7,48 @@
     android:background="@drawable/main_background"
     tools:context=".SingUpActivityMarket">
 
+    <LinearLayout
+        android:id="@+id/lySingUpActivityMarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shape_main_button"
+        android:layout_margin="@dimen/middle_margin">
+
+        <ImageView
+            android:id="@+id/ivSingUpActivityMarketBackspace"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_bar_app_icon"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/big_icon_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="7">
+
+        </TextView>
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lySingUpActivityMarket"
+        app:layout_constraintVertical_bias="0.4">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -494,7 +533,7 @@
                 android:layout_width="@dimen/big_width_button"
                 android:layout_height="@dimen/big_height_button"
                 android:layout_marginTop="@dimen/big_middle_margin"
-                android:layout_marginBottom="@dimen/big_middle_margin"
+                android:layout_marginBottom="@dimen/very_big_margin"
                 android:background="@drawable/shape_main_button"
                 android:enabled="false"
                 android:text="@string/save"
@@ -507,5 +546,6 @@
         </LinearLayout>
 
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
