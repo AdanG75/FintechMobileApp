@@ -199,6 +199,30 @@
 
                     </EditText>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/rewrite_password"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityMarketRewritePasswordMarket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
 
                 </LinearLayout>
 
@@ -290,6 +314,30 @@
 
                     <EditText
                         android:id="@+id/etSingUpActivityMarketPasswordBranch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/rewrite_password"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityMarketRewritePasswordBranch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -529,7 +577,7 @@
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:id="@+id/bLoginActivityMarketLogin"
+                android:id="@+id/bSingUpActivityMarketSave"
                 android:layout_width="@dimen/big_width_button"
                 android:layout_height="@dimen/big_height_button"
                 android:layout_marginTop="@dimen/big_middle_margin"

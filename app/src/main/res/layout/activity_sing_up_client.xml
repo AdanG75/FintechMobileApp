@@ -7,4 +7,562 @@
     android:background="@drawable/main_background"
     tools:context=".SingUpActivityClient">
 
+    <LinearLayout
+        android:id="@+id/lySingUpActivityClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shape_main_button"
+        android:layout_margin="@dimen/middle_margin">
+
+        <ImageView
+            android:id="@+id/ivSingUpActivityClientBackspace"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_bar_app_icon"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/big_icon_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="7">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lySingUpActivityClient"
+        app:layout_constraintVertical_bias="0.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/middle_margin"
+                android:elevation="@dimen/middle_elevation"
+                app:cardCornerRadius="@dimen/small_round_corner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/market_details"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/highlight_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/client_name"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientNameMarket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/client_name"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/client_lastname"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/client_lastname"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/email"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/date_of_birth"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientDateBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/hint_date"
+                        android:inputType="date"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/password"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/rewrite_password"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientRewritePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/middle_margin"
+                android:elevation="@dimen/middle_elevation"
+                app:cardCornerRadius="@dimen/small_round_corner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/client_address"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/highlight_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/zip_code"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientZipCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/hint_zip_code"
+                        android:inputType="number"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/state"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/state"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/city"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/city"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/street"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientStreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/street"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/outside_number"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientOutsideNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/outside_number"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/inner_number"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientInnerNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/hint_inner_number"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/middle_margin"
+                android:elevation="@dimen/middle_elevation"
+                app:cardCornerRadius="@dimen/small_round_corner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/paypal"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/highlight_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/client_paypal"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etSingUpActivityClientPaypal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/hint_paypal"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/middle_margin"
+                android:elevation="@dimen/middle_elevation"
+                app:cardCornerRadius="@dimen/small_round_corner">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSingUpActivityClientFingerprintTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/fingerprint"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/highlight_text"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvSingUpActivityClientInstructionSensor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/middle_margin"
+                        android:text="@string/instruction_sensor"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvSingUpActivityClientFingerprintTitle"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/bSingUpActivityClientConnectSensor"
+                        android:layout_width="@dimen/middle_width_button"
+                        android:layout_height="@dimen/middle_height_button"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/middle_margin"
+                        android:background="@drawable/shape_secondary_button"
+                        android:enabled="true"
+                        android:text="@string/connect_sensor"
+                        android:textColor="@color/mate_white"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvSingUpActivityClientInstructionSensor" />
+
+                    <TextView
+                        android:id="@+id/tvSingUpActivityClientInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/middle_margin"
+                        android:text="@string/catch_number"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/bSingUpActivityClientConnectSensor"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/bSingUpActivityClientCatchFingerprints"
+                        android:layout_width="@dimen/middle_width_button"
+                        android:layout_height="@dimen/middle_height_button"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/middle_margin"
+                        android:background="@drawable/shape_disable_button"
+                        android:enabled="false"
+                        android:text="@string/catch_fingerprint"
+                        android:textColor="@color/mate_white"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvSingUpActivityClientInfo" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/bSingUpActivityClientSave"
+                android:layout_width="@dimen/big_width_button"
+                android:layout_height="@dimen/big_height_button"
+                android:layout_marginTop="@dimen/big_middle_margin"
+                android:layout_marginBottom="@dimen/very_big_margin"
+                android:background="@drawable/shape_main_button"
+                android:enabled="false"
+                android:text="@string/save"
+                android:textColor="@color/mate_white"
+                android:textSize="@dimen/highlight_text"
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
