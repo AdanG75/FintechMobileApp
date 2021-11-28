@@ -20,7 +20,7 @@
         <ImageView
             android:id="@+id/ivSingUpActivityClientBackspace"
             android:layout_width="0dp"
-            android:layout_height="@dimen/height_bar_app_icon"
+            android:layout_height="@dimen/height_app_icon_36"
             android:src="@drawable/ic_baseline_keyboard_backspace_24"
             android:gravity="center_vertical"
             android:layout_weight="1">
@@ -75,7 +75,7 @@
                         android:layout_marginStart="@dimen/small_margin"
                         android:layout_marginTop="@dimen/small_margin"
                         android:layout_marginBottom="@dimen/small_margin"
-                        android:text="@string/market_details"
+                        android:text="@string/client_details"
                         android:textColor="@color/light_blue"
                         android:textSize="@dimen/highlight_text"
                         android:textStyle="bold">
@@ -539,6 +539,68 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tvSingUpActivityClientInfo" />
+
+                    <LinearLayout
+                        android:id="@+id/lySingUpActivityClientFingerprints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/bSingUpActivityClientCatchFingerprints"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="@dimen/middle_margin">
+
+                        <ImageView
+                            android:id="@+id/ivSingUpActivityClientOne"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_app_icon_36"
+                            android:src="@drawable/ic_baseline_one_24"
+                            android:tint="@color/background"
+                            android:layout_weight="1">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/ivSingUpActivityClientTwo"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_app_icon_36"
+                            android:src="@drawable/ic_baseline_two_24"
+                            android:tint="@color/background"
+                            android:layout_weight="1">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/ivSingUpActivityClientThree"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_app_icon_36"
+                            android:src="@drawable/ic_baseline_three_24"
+                            android:tint="@color/background"
+                            android:layout_weight="1">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/ivSingUpActivityClientFour"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_app_icon_36"
+                            android:src="@drawable/ic_baseline_four_24"
+                            android:tint="@color/background"
+                            android:layout_weight="1">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/ivSingUpActivityClientFive"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_app_icon_36"
+                            android:src="@drawable/ic_baseline_five_24"
+                            android:tint="@color/background"
+                            android:layout_marginBottom="@dimen/middle_margin"
+                            android:layout_weight="1">
+
+                        </ImageView>
+
+                    </LinearLayout>
 
 
 

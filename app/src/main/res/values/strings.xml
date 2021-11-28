@@ -40,7 +40,10 @@
     <string name="catch_fingerprint">Capturar Huella</string>
     <string name="registration">Registro</string>
     <string name="connect_sensor">Conectar sensor</string>
-    <string name="catch_number">Se capturarán 5 muestras</string>
+    <string name="catch_number">Se capturarán 5 muestras de la misma huella</string>
+    <string name="successful_register">Se han registrado los datos satisfactoriamente</string>
+    <string name="failure_register">Se ha producido un error al registrar los datos. Favor de intentarlo nuevamente.</string>
+    <string name="accept">Aceptar</string>
 
 
     <!-- underline strings -->
@@ -60,5 +63,7 @@
     <string name="hint_hours">08:00 - 17:00</string>
     <string name="hint_rfc">RFC</string>
     <string name="hint_date">05/09/1996</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -20,7 +20,7 @@
         <ImageView
             android:id="@+id/ivSingUpActivityMarketBackspace"
             android:layout_width="0dp"
-            android:layout_height="@dimen/height_bar_app_icon"
+            android:layout_height="@dimen/height_app_icon_36"
             android:src="@drawable/ic_baseline_keyboard_backspace_24"
             android:gravity="center_vertical"
             android:layout_weight="1">
