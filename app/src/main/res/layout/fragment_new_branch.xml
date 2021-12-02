@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.NewBranchFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue">
+
+        <Toolbar
+            android:id="@+id/tbNewBranchFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/flNewBranchFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/main_background"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/middle_margin"
+                    android:elevation="@dimen/middle_elevation"
+                    app:cardCornerRadius="@dimen/small_round_corner">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_card"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_margin"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_marginBottom="@dimen/small_margin"
+                            android:text="@string/branch_details"
+                            android:textColor="@color/light_blue"
+                            android:textSize="@dimen/highlight_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/branch_name"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentNameBranch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/branch_name"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/hours_of_operation"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentHours"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/hint_hours"
+                            android:inputType="time"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/password"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentPasswordBranch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/rewrite_password"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentRewritePasswordBranch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/middle_margin"
+                    android:elevation="@dimen/middle_elevation"
+                    app:cardCornerRadius="@dimen/small_round_corner">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_card"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_margin"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_marginBottom="@dimen/small_margin"
+                            android:text="@string/branch_address"
+                            android:textColor="@color/light_blue"
+                            android:textSize="@dimen/highlight_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/zip_code"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentZipCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/hint_zip_code"
+                            android:inputType="number"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/state"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/state"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/city"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/city"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/street"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentStreet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/street"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/outside_number"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentOutsideNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/outside_number"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/small_middle_margin"
+                            android:text="@string/inner_number"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/h2_text"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/etNewBranchFragmentInnerNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_middle_margin"
+                            android:background="@drawable/shape_edit_text"
+                            android:hint="@string/hint_inner_number"
+                            android:padding="@dimen/small_margin"
+                            android:textSize="@dimen/edit_text_size">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/bNewBranchFragmentSave"
+                    android:layout_width="@dimen/big_width_button"
+                    android:layout_height="@dimen/big_height_button"
+                    android:layout_marginTop="@dimen/big_middle_margin"
+                    android:layout_marginBottom="@dimen/big_middle_margin"
+                    android:background="@drawable/shape_main_button"
+                    android:enabled="false"
+                    android:text="@string/save"
+                    android:textColor="@color/mate_white"
+                    android:textSize="@dimen/highlight_text"
+                    android:textStyle="bold">
+
+                </Button>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

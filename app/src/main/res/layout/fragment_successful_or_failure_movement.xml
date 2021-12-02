@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".SuccessfulOrFailureMovementFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvSuccessfulOrFailureMovementFragmentState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/failure_movement"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/big_icon_title"
+            android:layout_marginTop="@dimen/big_margin"
+            android:layout_marginStart="@dimen/middle_margin" />
+
+
+        <ImageView
+            android:id="@+id/ivSuccessfulOrFailureMovementFragmentStatus"
+            android:layout_width="@dimen/size_stats_image"
+            android:layout_height="@dimen/size_stats_image"
+            android:layout_marginTop="@dimen/big_margin"
+            android:src="@drawable/ic_baseline_red_cross_24"/>
+
+
+        <Button
+            android:id="@+id/bSuccessfulOrFailureMovementFragmentAccept"
+            android:layout_width="@dimen/very_big_width_button"
+            android:layout_height="@dimen/very_big_height_button"
+            android:background="@drawable/shape_main_button"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/accept"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/big_icon_title"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSuccessfulOrFailureMovementFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_backgroud_progress_bar">
+
+        </View>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressTint="@color/light_blue">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+</FrameLayout>

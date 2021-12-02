@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".ui.BranchesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background">
+
+        <LinearLayout
+            android:id="@+id/lyBranchesActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/middle_margin"
+            android:background="@drawable/shape_main_button"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBranchesActivityBackspace"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_app_icon_36"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:text="@string/branches_text"
+                android:textColor="@color/mate_white"
+                android:textSize="@dimen/big_icon_title"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rwBranchesActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/middle_margin"
+            android:layout_marginTop="@dimen/big_middle_margin"
+            android:paddingBottom="@dimen/big_middle_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lyBranchesActivity">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/bBranchesActivitySave"
+            android:layout_width="@dimen/big_width_button"
+            android:layout_height="@dimen/big_height_button"
+            android:layout_marginTop="@dimen/big_middle_margin"
+            android:layout_marginBottom="@dimen/big_middle_margin"
+            android:background="@drawable/shape_main_button"
+            android:text="@string/add"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/highlight_text"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBranchesActivityFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_backgroud_progress_bar">
+
+        </View>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressTint="@color/light_blue">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

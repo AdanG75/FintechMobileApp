@@ -14,9 +14,11 @@
     <string name="first_question">¿Qué eres?</string>
     <string name="client_text">Cliente</string>
     <string name="market_text">Establecimiento</string>
+    <string name="branches_text">Sucursales</string>
     <string name="sing_in">Ingresar</string>
     <string name="sing_up">Crear Cuenta</string>
     <string name="save">Guardar</string>
+    <string name="add">Añadir</string>
     <string name="forgot_password">Olvidé mi contraseña</string>
     <string name="market_name">Nombre del Establecimiento</string>
     <string name="email">Correo Electrónico</string>
@@ -44,6 +46,8 @@
     <string name="successful_register">Se han registrado los datos satisfactoriamente</string>
     <string name="failure_register">Se ha producido un error al registrar los datos. Favor de intentarlo nuevamente.</string>
     <string name="accept">Aceptar</string>
+    <string name="successful_movement">El movimiento se ha realizado satisfactoriamente</string>
+    <string name="failure_movement">Se ha producido un error al realizar el movimiento. Favor de intentarlo nuevamente.</string>
 
 
     <!-- underline strings -->
