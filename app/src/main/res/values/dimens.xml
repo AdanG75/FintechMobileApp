@@ -23,10 +23,17 @@
     <dimen name="big_height_button">54dp</dimen>
     <dimen name="middle_width_button">120dp</dimen>
     <dimen name="middle_height_button">40dp</dimen>
+    <dimen name="width_app_icon_36">36dp</dimen>
     <dimen name="height_app_icon_36">36dp</dimen>
+    <dimen name="width_app_icon_48">48dp</dimen>
+    <dimen name="height_app_icon_48">48dp</dimen>
     <dimen name="size_stats_image">256dp</dimen>
     <dimen name="very_big_width_button">200dp</dimen>
     <dimen name="very_big_height_button">72dp</dimen>
+    <dimen name="width_branch_text">220dp</dimen>
+    <dimen name="width_branch_hour">100dp</dimen>
+    <dimen name="width_separator_line">2dp</dimen>
+    <dimen name="height_separator_line">48dp</dimen>
 
     <!-- Text sizes-->
     <dimen name="main_title">32sp</dimen>
