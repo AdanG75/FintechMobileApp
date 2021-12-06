@@ -48,8 +48,10 @@
     <string name="accept">Aceptar</string>
     <string name="successful_movement">El movimiento se ha realizado satisfactoriamente</string>
     <string name="failure_movement">Se ha producido un error al realizar el movimiento. Favor de intentarlo nuevamente.</string>
+    <string name="add_branch">Agregar Sucursal</string>
 
     <!-- menu strings -->
+    <string name="menu">Menú</string>
     <string name="credit">Crédito</string>
     <string name="movements">Movimientos</string>
     <string name="profile">Perfil</string>
@@ -72,7 +74,10 @@
     <string name="hint_hours">08:00 - 17:00</string>
     <string name="hint_rfc">RFC</string>
     <string name="hint_date">05/09/1996</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- extra strings -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="return_button">return button</string>
+    <string name="settings_button">settings button</string>
 
 </resources>
