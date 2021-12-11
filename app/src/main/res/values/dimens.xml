@@ -7,6 +7,7 @@
     <dimen name="small_margin">4dp</dimen>
     <dimen name="small_middle_margin">8dp</dimen>
     <dimen name="middle_margin">16dp</dimen>
+    <dimen name="second_middle_margin">20dp</dimen>
     <dimen name="almost_big_margin">24dp</dimen>
     <dimen name="big_middle_margin">32dp</dimen>
     <dimen name="small_big_margin">48dp</dimen>
@@ -32,6 +33,9 @@
     <dimen name="very_big_height_button">72dp</dimen>
     <dimen name="width_branch_text">220dp</dimen>
     <dimen name="width_branch_hour">100dp</dimen>
+    <dimen name="width_client_name">280dp</dimen>
+    <dimen name="width_credit_id">160dp</dimen>
+    <dimen name="width_amount_credit">100dp</dimen>
     <dimen name="width_separator_line">2dp</dimen>
     <dimen name="height_separator_line">48dp</dimen>
     <dimen name="nav_icon_size">30dp</dimen>

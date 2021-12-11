@@ -1,14 +1,572 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".ProfileMarketFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/middle_margin"
+                android:elevation="@dimen/middle_elevation"
+                app:cardCornerRadius="@dimen/small_round_corner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/market_details"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/highlight_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/market_name"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentNameMarket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/market_name"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/email"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentMarketEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/type_market"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentTypeMarket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/type_market"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/hint_rfc"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentRFC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/hint_rfc"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/bProfileMarketFragmentModifyMarketData"
+                        android:layout_width="@dimen/middle_width_button"
+                        android:layout_height="@dimen/middle_height_button"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_disable_button"
+                        android:elevation="@dimen/small_margin"
+                        android:enabled="true"
+                        android:text="@string/modify"
+                        android:textColor="@color/mate_white"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/middle_margin"
+                android:elevation="@dimen/middle_elevation"
+                app:cardCornerRadius="@dimen/small_round_corner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/branch_details"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/highlight_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/branch_name"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentNameBranch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/branch_name"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/hours_of_operation"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentMarketHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/hint_hours"
+                        android:inputType="time"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/zip_code"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentZipCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/hint_zip_code"
+                        android:inputType="number"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/state"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/state"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/city"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/city"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/street"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentStreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/street"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/outside_number"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentOutsideNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/outside_number"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/hint_inner_number"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileMarketFragmentInnerNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:enabled="false"
+                        android:hint="@string/hint_inner_number"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/middle_margin"
+                android:elevation="@dimen/middle_elevation"
+                app:cardCornerRadius="@dimen/small_round_corner">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProfileMarketFragmentTitleCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/profile_modifying"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/highlight_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvProfileMarketFragmentPasswordBranch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvProfileMarketFragmentTitleCard"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:layout_marginTop="@dimen/middle_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/branch_password"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/bProfileMarketFragmentModifyPasswordBranch"
+                        android:layout_width="@dimen/middle_width_button"
+                        android:layout_height="@dimen/middle_height_button"
+                        android:layout_below="@id/tvProfileMarketFragmentTitleCard"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginEnd="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:background="@drawable/shape_disable_button"
+                        android:elevation="@dimen/small_margin"
+                        android:enabled="true"
+                        android:text="@string/modify"
+                        android:textColor="@color/mate_white"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/vProfileMarketFragmentOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/bProfileMarketFragmentModifyPasswordBranch"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/middle_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginEnd="@dimen/middle_margin"
+                        android:background="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/tvProfileMarketFragmentPasswordMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vProfileMarketFragmentOne"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:layout_marginTop="@dimen/second_middle_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/market_password"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/bProfileMarketFragmentModifyPasswordMarket"
+                        android:layout_width="@dimen/middle_width_button"
+                        android:layout_height="@dimen/middle_height_button"
+                        android:layout_below="@id/vProfileMarketFragmentOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/small_middle_margin"
+                        android:layout_marginEnd="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:background="@drawable/shape_disable_button"
+                        android:elevation="@dimen/small_margin"
+                        android:enabled="true"
+                        android:text="@string/modify"
+                        android:textColor="@color/mate_white"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/vProfileMarketFragmentTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/bProfileMarketFragmentModifyPasswordMarket"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/middle_margin"
+                        android:layout_marginTop="@dimen/small_middle_margin"
+                        android:layout_marginEnd="@dimen/middle_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:background="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/tvProfileMarketFragmentPaypalAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vProfileMarketFragmentTwo"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:layout_marginTop="@dimen/second_middle_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="@string/paypal_account"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/bProfileMarketFragmentModifyPaypalAccount"
+                        android:layout_width="@dimen/middle_width_button"
+                        android:layout_height="@dimen/middle_height_button"
+                        android:layout_below="@id/vProfileMarketFragmentTwo"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/small_middle_margin"
+                        android:layout_marginEnd="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:background="@drawable/shape_disable_button"
+                        android:elevation="@dimen/small_margin"
+                        android:enabled="true"
+                        android:text="@string/modify"
+                        android:textColor="@color/mate_white"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/vProfileMarketFragmentThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/bProfileMarketFragmentModifyPaypalAccount"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/middle_margin"
+                        android:layout_marginTop="@dimen/small_middle_margin"
+                        android:layout_marginEnd="@dimen/middle_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:background="@color/text_color" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/bProfileMarketFragmentSave"
+                android:layout_width="@dimen/big_width_button"
+                android:layout_height="@dimen/big_height_button"
+                android:layout_marginTop="@dimen/big_middle_margin"
+                android:layout_marginBottom="@dimen/big_middle_margin"
+                android:background="@drawable/shape_main_button"
+                android:enabled="true"
+                android:text="@string/save"
+                android:textColor="@color/mate_white"
+                android:textSize="@dimen/highlight_text"
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

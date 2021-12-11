@@ -12,14 +12,46 @@
 
     <!-- My strings-->
     <string name="first_question">¿Qué eres?</string>
+
+    <string name="registration">Registro</string>
+    <string name="catch_number">Se capturarán 5 muestras de la misma huella</string>
+
+    <string name="successful_register">Se han registrado los datos satisfactoriamente</string>
+    <string name="failure_register">Se ha producido un error al registrar los datos. Favor de intentarlo nuevamente.</string>
+
+    <string name="successful_movement">El movimiento se ha realizado satisfactoriamente</string>
+    <string name="failure_movement">Se ha producido un error al realizar el movimiento. Favor de intentarlo nuevamente.</string>
+
+    <string name="password_instruction">Escriba la contaseña del establecimiento:</string>
+
+    <string name="market_password">Contraseña del Establecimiento</string>
+    <string name="branch_password">Contraseña de la Sucursal</string>
+    <string name="paypal_account">Cuenta de PayPal</string>
+
+    <!-- menu strings -->
+    <string name="menu">Menú</string>
+    <string name="credit">Crédito</string>
+    <string name="movements">Movimientos</string>
+    <string name="profile">Perfil</string>
     <string name="client_text">Cliente</string>
     <string name="market_text">Establecimiento</string>
     <string name="branches_text">Sucursales</string>
+
+    <!-- button strings -->
     <string name="sing_in">Ingresar</string>
     <string name="sing_up">Crear Cuenta</string>
     <string name="save">Guardar</string>
     <string name="add">Añadir</string>
     <string name="forgot_password">Olvidé mi contraseña</string>
+    <string name="catch_fingerprint">Capturar Huella</string>
+    <string name="connect_sensor">Conectar sensor</string>
+    <string name="accept">Aceptar</string>
+    <string name="add_branch">Agregar Sucursal</string>
+    <string name="confirm">Confirmar</string>
+    <string name="check_password">Checar</string>
+    <string name="modify">Modificar</string>
+
+    <!-- edit text title strings -->
     <string name="market_name">Nombre del Establecimiento</string>
     <string name="email">Correo Electrónico</string>
     <string name="type_market">Tipo de Comercio</string>
@@ -39,23 +71,6 @@
     <string name="date_of_birth">Fecha de nacimiento</string>
     <string name="client_paypal">Cuenta PayPal* (Opcional)</string>
     <string name="market_paypal">Cuenta PayPal</string>
-    <string name="catch_fingerprint">Capturar Huella</string>
-    <string name="registration">Registro</string>
-    <string name="connect_sensor">Conectar sensor</string>
-    <string name="catch_number">Se capturarán 5 muestras de la misma huella</string>
-    <string name="successful_register">Se han registrado los datos satisfactoriamente</string>
-    <string name="failure_register">Se ha producido un error al registrar los datos. Favor de intentarlo nuevamente.</string>
-    <string name="accept">Aceptar</string>
-    <string name="successful_movement">El movimiento se ha realizado satisfactoriamente</string>
-    <string name="failure_movement">Se ha producido un error al realizar el movimiento. Favor de intentarlo nuevamente.</string>
-    <string name="add_branch">Agregar Sucursal</string>
-
-    <!-- menu strings -->
-    <string name="menu">Menú</string>
-    <string name="credit">Crédito</string>
-    <string name="movements">Movimientos</string>
-    <string name="profile">Perfil</string>
-
 
     <!-- underline strings -->
     <string name="market_details"><u>Datos del Establecimiento</u></string>
@@ -66,14 +81,18 @@
     <string name="client_address"><u>Dirección</u></string>
     <string name="fingerprint"><u>Huella Dactilar</u></string>
     <string name="instruction_sensor"><u>Favor de conectar el sensor primero antes de capturar la huella</u></string>
+    <string name="profile_modifying"><u>Modificaciones a Perfil</u></string>
 
     <!-- hint strings -->
     <string name="hint_paypal">mypaypalemail@email.com</string>
     <string name="hint_inner_number">Número Interior</string>
     <string name="hint_zip_code">03511</string>
-    <string name="hint_hours">08:00 - 17:00</string>
+    <string name="hint_hours">08:00 – 17:00</string>
     <string name="hint_rfc">RFC</string>
     <string name="hint_date">05/09/1996</string>
+    <string name="credit_id">Crédito ID</string>
+    <string name="name_field">Nombre Nombre Apellido Apellido</string>
+    <string name="amount_field">$145663.00</string>
 
     <!-- extra strings -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
