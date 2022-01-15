@@ -35,6 +35,9 @@
     <dimen name="width_branch_hour">100dp</dimen>
     <dimen name="width_client_name">280dp</dimen>
     <dimen name="width_credit_id">160dp</dimen>
+    <dimen name="width_receipt_movement">160dp</dimen>
+    <dimen name="width_receipt_extra_information">280dp</dimen>
+    <dimen name="width_receipt_date">100dp</dimen>
     <dimen name="width_amount_credit">100dp</dimen>
     <dimen name="width_separator_line">2dp</dimen>
     <dimen name="height_separator_line">48dp</dimen>

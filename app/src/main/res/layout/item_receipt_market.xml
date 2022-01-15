@@ -19,13 +19,13 @@
             android:background="@drawable/shape_card">
 
             <TextView
-                android:id="@+id/tvItemCreditMarketClientName"
-                android:layout_width="@dimen/width_client_name"
+                android:id="@+id/tvItemReceiptMarketMovement"
+                android:layout_width="@dimen/width_receipt_movement"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/small_margin"
                 android:ellipsize="end"
                 android:lines="1"
-                android:text="@string/name_field"
+                android:text="@string/movement_field"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/h2_text"
                 android:textStyle="bold"
@@ -35,56 +35,57 @@
             </TextView>
 
             <TextView
-                android:id="@+id/tvItemCreditMarketCreditId"
-                android:layout_width="@dimen/width_credit_id"
+                android:id="@+id/tvItemReceiptMarketDate"
+                android:layout_width="@dimen/width_receipt_date"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/small_margin"
+                android:layout_below="@id/tvItemReceiptMarketMovement"
                 android:layout_alignParentStart="true"
-                android:layout_below="@id/tvItemCreditMarketClientName"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
                 android:ellipsize="end"
                 android:lines="1"
-                android:text="@string/credit_id"
+                android:text="@string/hint_date"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/h2_text">
 
             </TextView>
 
             <TextView
-                android:id="@+id/tvItemCreditMarketAmountCredit"
+                android:id="@+id/tvItemReceiptMarketAmountMovement"
                 android:layout_width="@dimen/width_amount_credit"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/small_margin"
-                android:layout_toStartOf="@id/vItemCreditMarketView"
-                android:layout_below="@id/tvItemCreditMarketClientName"
+                android:layout_alignParentEnd="true"
                 android:ellipsize="end"
                 android:lines="1"
                 android:text="@string/amount_field"
+                android:textAlignment="center"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/h2_text"
                 android:textStyle="bold">
 
             </TextView>
 
-            <View
-                android:id="@+id/vItemCreditMarketView"
-                android:layout_width="@dimen/width_separator_line"
-                android:layout_height="@dimen/height_separator_line"
-                android:layout_centerVertical="true"
-                android:layout_margin="@dimen/small_margin"
-                android:layout_toStartOf="@id/ivItemCreditMarketMovementButton"
-                android:background="@color/light_blue">
-
-            </View>
-
-            <ImageView
-                android:id="@+id/ivItemCreditMarketMovementButton"
-                android:layout_width="@dimen/width_app_icon_48"
-                android:layout_height="@dimen/height_app_icon_48"
+            <TextView
+                android:id="@+id/tvItemReceiptMarketExtraInformation"
+                android:layout_width="@dimen/width_receipt_extra_information"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvItemReceiptMarketMovement"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_baseline_chevron_right_24">
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/extra_information"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/h2_text">
 
-            </ImageView>
+            </TextView>
 
         </RelativeLayout>
 

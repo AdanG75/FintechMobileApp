@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/main_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.FintechA75">
-        <activity android:name=".MovementsMarketActivity"></activity>
+        <activity
+            android:name=".ActivityMovementOptions"
+            android:exported="false" />
+        <activity android:name=".MovementsMarketActivity" />
         <activity android:name=".ui.BranchesActivity" />
         <activity android:name=".SingUpActivityMarket" />
         <activity android:name=".SingUpActivityClient" />
