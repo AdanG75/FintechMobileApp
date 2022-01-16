@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionMovementsFragment"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/movements_with_colon"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/middle_main_title"
+            android:layout_marginTop="@dimen/big_margin"
+            android:layout_marginStart="@dimen/almost_big_margin">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/bOptionMovementsPay"
+            android:layout_width="@dimen/big_width_button"
+            android:layout_height="@dimen/big_height_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@drawable/shape_main_button"
+            android:enabled="true"
+            android:text="@string/pay"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/highlight_text"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bOptionMovementsTransfer"
+            android:layout_width="@dimen/big_width_button"
+            android:layout_height="@dimen/big_height_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@drawable/shape_main_button"
+            android:enabled="true"
+            android:text="@string/transfer"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/highlight_text"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bOptionMovementsDeposit"
+            android:layout_width="@dimen/big_width_button"
+            android:layout_height="@dimen/big_height_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@drawable/shape_main_button"
+            android:enabled="true"
+            android:text="@string/deposit"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/highlight_text"
+            android:textStyle="bold">
+
+        </Button>
+
+    </LinearLayout>
+
+</FrameLayout>

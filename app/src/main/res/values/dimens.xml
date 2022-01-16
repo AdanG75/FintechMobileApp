@@ -42,13 +42,16 @@
     <dimen name="width_separator_line">2dp</dimen>
     <dimen name="height_separator_line">48dp</dimen>
     <dimen name="nav_icon_size">30dp</dimen>
+    <dimen name="width_fingerprint_image">98dp</dimen>
+    <dimen name="height_fingerprint_image">112dp</dimen>
 
     <!-- Text sizes-->
-    <dimen name="main_title">32sp</dimen>
     <dimen name="big_detail_size_text">48sp</dimen>
+    <dimen name="main_title">32sp</dimen>
+    <dimen name="middle_main_title">28sp</dimen>
     <dimen name="big_icon_title">24sp</dimen>
-    <dimen name="edit_text_size">18sp</dimen>
     <dimen name="highlight_text">20sp</dimen>
+    <dimen name="edit_text_size">18sp</dimen>
     <dimen name="h1_text">18sp</dimen>
     <dimen name="h2_text">16sp</dimen>
     <dimen name="h3_text">14sp</dimen>

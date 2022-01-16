@@ -36,6 +36,7 @@
     <string name="client_text">Cliente</string>
     <string name="market_text">Establecimiento</string>
     <string name="branches_text">Sucursales</string>
+    <string name="movements_with_colon">Movimientos:</string>
 
     <!-- button strings -->
     <string name="sing_in">Ingresar</string>
@@ -50,6 +51,9 @@
     <string name="confirm">Confirmar</string>
     <string name="check_password">Checar</string>
     <string name="modify">Modificar</string>
+    <string name="pay">Pagar</string>
+    <string name="transfer">Transferir</string>
+    <string name="deposit">Depositar</string>
 
     <!-- edit text title strings -->
     <string name="market_name">Nombre del Establecimiento</string>
@@ -71,6 +75,12 @@
     <string name="date_of_birth">Fecha de nacimiento</string>
     <string name="client_paypal">Cuenta PayPal* (Opcional)</string>
     <string name="market_paypal">Cuenta PayPal</string>
+    <string name="credit_number">Número de Crédito</string>
+    <string name="market_number">Número de Establecimiento</string>
+    <string name="amount_title">Monto</string>
+    <string name="depositor_name">Nombre del depositante</string>
+    <string name="origin_number_credit">Número de Crédito Origen</string>
+    <string name="destination_number_credit">Número de Crédito Destino</string>
 
     <!-- underline strings -->
     <string name="market_details"><u>Datos del Establecimiento</u></string>
@@ -95,6 +105,7 @@
     <string name="amount_field">$145663.00</string>
     <string name="movement_field">Tipo Movimiento</string>
     <string name="extra_information">Información Extra</string>
+    <string name="amount_example">0.00</string>
 
     <!-- extra strings -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

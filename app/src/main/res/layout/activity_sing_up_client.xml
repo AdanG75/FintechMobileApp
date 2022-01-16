@@ -553,8 +553,8 @@
                             android:layout_width="0dp"
                             android:layout_height="@dimen/height_app_icon_36"
                             android:src="@drawable/ic_baseline_one_24"
-                            android:tint="@color/background"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            app:tint="@color/background">
 
                         </ImageView>
 
@@ -563,8 +563,8 @@
                             android:layout_width="0dp"
                             android:layout_height="@dimen/height_app_icon_36"
                             android:src="@drawable/ic_baseline_two_24"
-                            android:tint="@color/background"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            app:tint="@color/background">
 
                         </ImageView>
 
@@ -573,8 +573,8 @@
                             android:layout_width="0dp"
                             android:layout_height="@dimen/height_app_icon_36"
                             android:src="@drawable/ic_baseline_three_24"
-                            android:tint="@color/background"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            app:tint="@color/background">
 
                         </ImageView>
 
@@ -583,8 +583,8 @@
                             android:layout_width="0dp"
                             android:layout_height="@dimen/height_app_icon_36"
                             android:src="@drawable/ic_baseline_four_24"
-                            android:tint="@color/background"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            app:tint="@color/background">
 
                         </ImageView>
 
@@ -593,9 +593,9 @@
                             android:layout_width="0dp"
                             android:layout_height="@dimen/height_app_icon_36"
                             android:src="@drawable/ic_baseline_five_24"
-                            android:tint="@color/background"
                             android:layout_marginBottom="@dimen/middle_margin"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            app:tint="@color/background">
 
                         </ImageView>
 
