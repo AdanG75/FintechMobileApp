@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:context=".FilterMarketActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginTop="@dimen/middle_margin"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="@drawable/shape_main_button">
+
+        <ImageView
+            android:id="@+id/ivFilterBackspace"
+            android:layout_width="@dimen/width_app_icon_36"
+            android:layout_height="@dimen/height_app_icon_36"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:contentDescription="@string/return_button"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/filter_values"
+            android:textColor="@color/mate_white"
+            android:textSize="@dimen/big_icon_title"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/width_separator_slim_line"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginTop="@dimen/middle_margin"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="@color/shiny_blue">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bFilterHigherThanZero"
+            android:layout_width="@dimen/middle_width_button"
+            android:layout_height="@dimen/middle_height_button"
+
+            android:layout_margin="@dimen/small_middle_margin"
+            android:background="@drawable/shape_secondary_button"
+            android:enabled="true"
+            android:text="@string/higher_than_zero"
+            android:textAllCaps="false"
+            android:textColor="@color/mate_white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bFilterEqualToZero"
+            android:layout_width="@dimen/middle_width_button"
+            android:layout_height="@dimen/middle_height_button"
+            android:layout_margin="@dimen/small_middle_margin"
+            android:background="@drawable/shape_secondary_button"
+            android:enabled="true"
+            android:text="@string/equal_to_zero"
+            android:textAllCaps="false"
+            android:textColor="@color/mate_white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bFilterPayments"
+            android:layout_width="@dimen/middle_width_button"
+            android:layout_height="@dimen/middle_height_button"
+            android:layout_margin="@dimen/small_middle_margin"
+            android:background="@drawable/shape_secondary_button"
+            android:enabled="true"
+            android:text="@string/payments"
+            android:textAllCaps="false"
+            android:textColor="@color/mate_white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bFilterTransfers"
+            android:layout_width="@dimen/middle_width_button"
+            android:layout_height="@dimen/middle_height_button"
+            android:layout_margin="@dimen/small_middle_margin"
+            android:background="@drawable/shape_secondary_button"
+            android:enabled="true"
+            android:text="@string/transfers"
+            android:textAllCaps="false"
+            android:textColor="@color/mate_white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bFilterDeposits"
+            android:layout_width="@dimen/middle_width_button"
+            android:layout_height="@dimen/middle_height_button"
+            android:layout_margin="@dimen/small_middle_margin"
+            android:background="@drawable/shape_secondary_button"
+            android:enabled="true"
+            android:text="@string/deposits"
+            android:textAllCaps="false"
+            android:textColor="@color/mate_white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/width_separator_slim_line"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="@color/shiny_blue">
+
+    </View>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rwFilterItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

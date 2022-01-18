@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FintechA75">
         <activity
+            android:name=".SearchMarketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FilterMarketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewCreditActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivityMovementOptions"
             android:exported="false" />
         <activity android:name=".MovementsMarketActivity" />

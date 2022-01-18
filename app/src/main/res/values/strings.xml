@@ -37,6 +37,8 @@
     <string name="market_text">Establecimiento</string>
     <string name="branches_text">Sucursales</string>
     <string name="movements_with_colon">Movimientos:</string>
+    <string name="new_credit">Nuevo Crédito</string>
+    <string name="filter_values">Filtrar Créditos y Recibos</string>
 
     <!-- button strings -->
     <string name="sing_in">Ingresar</string>
@@ -54,6 +56,12 @@
     <string name="pay">Pagar</string>
     <string name="transfer">Transferir</string>
     <string name="deposit">Depositar</string>
+    <string name="create_credit">Crear Crédito</string>
+    <string name="higher_than_zero"><![CDATA[Créditos > 0]]></string>
+    <string name="equal_to_zero">Créditos = 0</string>
+    <string name="payments">Pagos</string>
+    <string name="transfers">Transferencias</string>
+    <string name="deposits">Depósitos</string>
 
     <!-- edit text title strings -->
     <string name="market_name">Nombre del Establecimiento</string>
@@ -72,6 +80,7 @@
     <string name="inner_number">Número Interior* (Opcional)</string>
     <string name="client_name">Nombre(s)</string>
     <string name="client_lastname">Apellido(s)</string>
+    <string name="client_email">Correo Electrónico del Cliente</string>
     <string name="date_of_birth">Fecha de nacimiento</string>
     <string name="client_paypal">Cuenta PayPal* (Opcional)</string>
     <string name="market_paypal">Cuenta PayPal</string>
@@ -106,10 +115,13 @@
     <string name="movement_field">Tipo Movimiento</string>
     <string name="extra_information">Información Extra</string>
     <string name="amount_example">0.00</string>
+    <string name="hint_email">myemail@mail.com</string>
 
     <!-- extra strings -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="return_button">return button</string>
     <string name="settings_button">settings button</string>
+    <string name="search">Buscar</string>
+
 
 </resources>

@@ -92,7 +92,7 @@
                     <EditText
                         android:id="@+id/etDepositMovementIdCredit"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
                         android:hint="@string/credit_number"
@@ -116,7 +116,7 @@
                     <EditText
                         android:id="@+id/etDepositMovementDepositorName"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
                         android:hint="@string/depositor_name"
@@ -140,7 +140,7 @@
                     <EditText
                         android:id="@+id/etDepositMovementAmount"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
                         android:hint="@string/amount_example"

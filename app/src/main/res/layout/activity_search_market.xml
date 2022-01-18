@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    tools:context=".SearchMarketActivity">
+
+    <EditText
+        android:id="@+id/etPayMovementIdCredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/middle_margin"
+        android:layout_marginTop="@dimen/middle_margin"
+        android:layout_marginEnd="@dimen/small_middle_margin"
+        android:layout_marginStart="@dimen/small_middle_margin"
+        android:background="@drawable/shape_edit_text"
+        android:hint="@string/search"
+        android:padding="@dimen/small_margin"
+        android:drawableStart="@drawable/ic_gray_search_24"
+        android:textAlignment="center"
+        android:textSize="@dimen/edit_text_size" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/width_separator_slim_line"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginEnd="@dimen/middle_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="@color/shiny_blue">
+
+    </View>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rwSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

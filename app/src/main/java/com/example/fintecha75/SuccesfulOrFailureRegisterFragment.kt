@@ -34,7 +34,7 @@ class SuccesfulOrFailureRegisterFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_succesful_or_failure_register, container, false)
+        return inflater.inflate(R.layout.fragment_successful_or_failure_register, container, false)
     }
 
     companion object {
