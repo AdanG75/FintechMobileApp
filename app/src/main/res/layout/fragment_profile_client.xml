@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".ProfileMarketFragment">
+    android:background="@drawable/main_background"
+    tools:context=".ProfileClientFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                         android:layout_marginStart="@dimen/small_margin"
                         android:layout_marginTop="@dimen/small_margin"
                         android:layout_marginBottom="@dimen/small_margin"
-                        android:text="@string/market_details"
+                        android:text="@string/client_details"
                         android:textColor="@color/light_blue"
                         android:textSize="@dimen/highlight_text"
                         android:textStyle="bold">
@@ -47,7 +47,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/small_middle_margin"
-                        android:text="@string/market_name"
+                        android:text="@string/client_name"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/h2_text"
                         android:textStyle="bold">
@@ -55,13 +55,35 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentNameMarket"
+                        android:id="@+id/etProfileClientName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
-                        android:hint="@string/market_name"
+                        android:hint="@string/client_name"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_middle_margin"
+                        android:text="@string/client_lastname"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etProfileClientLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/client_lastname"
                         android:padding="@dimen/small_margin"
                         android:textSize="@dimen/edit_text_size">
 
@@ -79,12 +101,11 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentMarketEmail"
+                        android:id="@+id/etProfileClientEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
                         android:hint="@string/email"
                         android:inputType="textEmailAddress"
                         android:padding="@dimen/small_margin"
@@ -96,7 +117,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/small_middle_margin"
-                        android:text="@string/type_market"
+                        android:text="@string/date_of_birth"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/h2_text"
                         android:textStyle="bold">
@@ -104,56 +125,17 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentTypeMarket"
+                        android:id="@+id/etProfileClientDateBirth"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
-                        android:hint="@string/type_market"
+                        android:hint="@string/hint_date"
+                        android:inputType="date"
                         android:padding="@dimen/small_margin"
                         android:textSize="@dimen/edit_text_size">
 
                     </EditText>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/small_middle_margin"
-                        android:text="@string/hint_rfc"
-                        android:textColor="@color/text_color"
-                        android:textSize="@dimen/h2_text"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <EditText
-                        android:id="@+id/etProfileMarketFragmentRFC"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/small_middle_margin"
-                        android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
-                        android:hint="@string/hint_rfc"
-                        android:padding="@dimen/small_margin"
-                        android:textSize="@dimen/edit_text_size">
-
-                    </EditText>
-
-                    <Button
-                        android:id="@+id/bProfileMarketFragmentModifyMarketData"
-                        android:layout_width="@dimen/middle_width_button"
-                        android:layout_height="@dimen/middle_height_button"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/small_margin"
-                        android:layout_marginBottom="@dimen/small_middle_margin"
-                        android:background="@drawable/shape_disable_button"
-                        android:elevation="@dimen/small_margin"
-                        android:enabled="true"
-                        android:text="@string/modify"
-                        android:textColor="@color/mate_white"
-                        android:textStyle="bold" />
-
 
                 </LinearLayout>
 
@@ -178,61 +160,12 @@
                         android:layout_marginStart="@dimen/small_margin"
                         android:layout_marginTop="@dimen/small_margin"
                         android:layout_marginBottom="@dimen/small_margin"
-                        android:text="@string/branch_details"
+                        android:text="@string/client_address"
                         android:textColor="@color/light_blue"
                         android:textSize="@dimen/highlight_text"
                         android:textStyle="bold">
 
                     </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/small_middle_margin"
-                        android:text="@string/branch_name"
-                        android:textColor="@color/text_color"
-                        android:textSize="@dimen/h2_text"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <EditText
-                        android:id="@+id/etProfileMarketFragmentNameBranch"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/small_middle_margin"
-                        android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
-                        android:hint="@string/branch_name"
-                        android:padding="@dimen/small_margin"
-                        android:textSize="@dimen/edit_text_size">
-
-                    </EditText>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/small_middle_margin"
-                        android:text="@string/hours_of_operation"
-                        android:textColor="@color/text_color"
-                        android:textSize="@dimen/h2_text"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <EditText
-                        android:id="@+id/etProfileMarketFragmentMarketHours"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/small_middle_margin"
-                        android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
-                        android:hint="@string/hint_hours"
-                        android:inputType="time"
-                        android:padding="@dimen/small_margin"
-                        android:textSize="@dimen/edit_text_size">
-
-                    </EditText>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -246,12 +179,11 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentZipCode"
+                        android:id="@+id/etProfileClientZipCode"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
                         android:hint="@string/hint_zip_code"
                         android:inputType="number"
                         android:padding="@dimen/small_margin"
@@ -271,12 +203,11 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentState"
+                        android:id="@+id/etProfileClientState"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
                         android:hint="@string/state"
                         android:padding="@dimen/small_margin"
                         android:textSize="@dimen/edit_text_size">
@@ -295,12 +226,11 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentCity"
+                        android:id="@+id/etProfileClientCity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
                         android:hint="@string/city"
                         android:padding="@dimen/small_margin"
                         android:textSize="@dimen/edit_text_size">
@@ -319,12 +249,11 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentStreet"
+                        android:id="@+id/etProfileClientStreet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
                         android:hint="@string/street"
                         android:padding="@dimen/small_margin"
                         android:textSize="@dimen/edit_text_size">
@@ -343,12 +272,11 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentOutsideNumber"
+                        android:id="@+id/etProfileClientOutsideNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
                         android:hint="@string/outside_number"
                         android:padding="@dimen/small_margin"
                         android:textSize="@dimen/edit_text_size">
@@ -359,7 +287,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/small_middle_margin"
-                        android:text="@string/hint_inner_number"
+                        android:text="@string/inner_number"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/h2_text"
                         android:textStyle="bold">
@@ -367,12 +295,11 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etProfileMarketFragmentInnerNumber"
+                        android:id="@+id/etProfileClientInnerNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:enabled="false"
                         android:hint="@string/hint_inner_number"
                         android:padding="@dimen/small_margin"
                         android:textSize="@dimen/edit_text_size">
@@ -421,7 +348,7 @@
                         android:layout_marginStart="@dimen/small_middle_margin"
                         android:layout_marginTop="@dimen/middle_margin"
                         android:layout_marginBottom="@dimen/small_margin"
-                        android:text="@string/branch_password"
+                        android:text="@string/password"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/h2_text"
                         android:textStyle="bold">
@@ -465,7 +392,7 @@
                         android:layout_marginStart="@dimen/small_middle_margin"
                         android:layout_marginTop="@dimen/second_middle_margin"
                         android:layout_marginBottom="@dimen/small_margin"
-                        android:text="@string/market_password"
+                        android:text="@string/fingerprint_text"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/h2_text"
                         android:textStyle="bold">

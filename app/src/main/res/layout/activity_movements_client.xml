@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
-    tools:context=".MovementsMarketActivity">
+    tools:context=".MovementsClientActivity">
 
     <RelativeLayout
-        android:id="@+id/rlMovementsMarketActivity"
+        android:id="@+id/rlMovementsClientActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/middle_margin"
@@ -19,7 +19,7 @@
         android:layout_alignParentTop="true">
 
         <ImageView
-            android:id="@+id/ivMovementsMarketActivityBackspace"
+            android:id="@+id/ivMovementsClientActivityBackspace"
             android:layout_width="@dimen/width_app_icon_36"
             android:layout_height="@dimen/height_app_icon_36"
             android:layout_alignParentStart="true"
@@ -41,7 +41,7 @@
         </TextView>
 
         <ImageView
-            android:id="@+id/ivMovementsMarketActivitySettings"
+            android:id="@+id/ivMovementsClientActivitySettings"
             android:layout_width="@dimen/width_app_icon_36"
             android:layout_height="@dimen/height_app_icon_36"
             android:layout_alignParentEnd="true"
@@ -57,10 +57,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/small_margin"
-        android:layout_below="@id/rlMovementsMarketActivity">
+        android:layout_below="@id/rlMovementsClientActivity">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bnvMarketMenu"
+            android:id="@+id/bnvClientMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -76,16 +76,16 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <fragment
-            android:id="@+id/fragmentContentMarketMain"
+            android:id="@+id/fragmentContentClientMain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/bnvMarketMenu"
-            android:layout_above="@id/lyMovementsMarketActivity">
+            android:layout_below="@id/bnvClientMenu"
+            android:layout_above="@id/lyMovementsClientActivity">
 
         </fragment>
 
         <LinearLayout
-            android:id="@+id/lyMovementsMarketActivity"
+            android:id="@+id/lyMovementsClientActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_middle_margin"
@@ -94,16 +94,7 @@
             android:layout_alignParentBottom="true">
 
             <ImageView
-                android:id="@+id/ivMovementsMarketNewCredit"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/nav_icon_size"
-                android:layout_weight="1"
-                android:src="@drawable/ic_add_24">
-
-            </ImageView>
-
-            <ImageView
-                android:id="@+id/ivMovementsMarketFilter"
+                android:id="@+id/ivMovementsClientFilter"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/nav_icon_size"
                 android:layout_weight="1"
@@ -112,32 +103,22 @@
             </ImageView>
 
             <ImageView
-                android:id="@+id/ivMovementsMarketRegisterClient"
+                android:id="@+id/ivMovementsClientFindMarket"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/nav_icon_size"
                 android:layout_weight="1"
-                android:src="@drawable/ic_person_add_24">
+                android:src="@drawable/ic_baseline_store_128">
 
             </ImageView>
 
             <ImageView
-                android:id="@+id/ivMovementsMarketSearch"
+                android:id="@+id/ivMovementsClientSearch"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/nav_icon_size"
                 android:layout_weight="1"
                 android:src="@drawable/ic_search_24">
 
             </ImageView>
-
-            <ImageView
-                android:id="@+id/ivMovementsMarketDoMovement"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/nav_icon_size"
-                android:layout_weight="1"
-                android:src="@drawable/ic_movements_24">
-
-            </ImageView>
-
 
         </LinearLayout>
 

@@ -25,7 +25,7 @@
                 android:layout_margin="@dimen/small_margin"
                 android:ellipsize="end"
                 android:lines="1"
-                android:text="@string/store_name_example"
+                android:text="@string/name_field"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/h2_text"
                 android:textStyle="bold"

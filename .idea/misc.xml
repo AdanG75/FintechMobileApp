@@ -9,26 +9,36 @@
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_login_market.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_main.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_movement_options.xml" value="0.34103260869565216" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_movements_client.xml" value="0.327445652173913" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_movements_market.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_new_credit.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_search_market.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_sing_up_client.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_sing_up_market.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/activity_start.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_change_password_dialog.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_change_paypal_account.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_check_password_dialog.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_credit_client.xml" value="0.327445652173913" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_credit_market.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_deposit.xml" value="0.34103260869565216" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_deposit_market.xml" value="0.3328804347826087" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_new_branch.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_option_movements.xml" value="0.34103260869565216" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_pay.xml" value="0.34103260869565216" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_profile_market.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_receipts_client.xml" value="0.327445652173913" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_receipts_market.xml" value="0.2391304347826087" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_successful_or_failure_movement.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_successful_or_failure_register.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/fragment_transfer.xml" value="0.21238938053097345" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/global/activity_movement_options.xml" value="0.23641304347826086" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/itam_receipt_market.xml" value="0.34103260869565216" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/item_branch.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/item_credit_client.xml" value="0.33" />
         <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/item_credit_market.xml" value="0.25271739130434784" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/item_receipt_client.xml" value="0.327445652173913" />
+        <entry key="..\:/Users/COFFE/AndroidStudioProjects/FintechA75/app/src/main/res/layout/item_receipt_market.xml" value="0.2391304347826087" />
       </map>
     </option>
   </component>

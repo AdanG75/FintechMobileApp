@@ -14,7 +14,7 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <RelativeLayout
-        android:id="@+id/rlBranchesActivityFragment"
+        android:id="@+id/rlCreditMarketFragmentLoading"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

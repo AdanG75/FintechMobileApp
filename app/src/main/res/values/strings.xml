@@ -27,6 +27,7 @@
     <string name="market_password">Contraseña del Establecimiento</string>
     <string name="branch_password">Contraseña de la Sucursal</string>
     <string name="paypal_account">Cuenta de PayPal</string>
+    <string name="fingerprint_text">Huella Dactilar</string>
 
     <!-- menu strings -->
     <string name="menu">Menú</string>
@@ -116,6 +117,7 @@
     <string name="extra_information">Información Extra</string>
     <string name="amount_example">0.00</string>
     <string name="hint_email">myemail@mail.com</string>
+    <string name="store_name_example">Tacos de 10</string>
 
     <!-- extra strings -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

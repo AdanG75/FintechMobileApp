@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".ReceiptsMarketFragment">
+    android:background="@drawable/main_background"
+    tools:context=".CreditClientFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rwReceiptsMarketFragment"
+        android:id="@+id/rwCreditClientFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </androidx.recyclerview.widget.RecyclerView>
 
     <RelativeLayout
-        android:id="@+id/rlReceiptsMarketFragmentLoading"
+        android:id="@+id/rlCreditClientFragmentLoading"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

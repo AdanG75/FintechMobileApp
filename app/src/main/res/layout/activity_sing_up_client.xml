@@ -93,7 +93,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientNameMarket"
+                        android:id="@+id/etProfileClientName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -116,7 +116,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientLastName"
+                        android:id="@+id/etProfileClientLastName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -139,7 +139,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientEmail"
+                        android:id="@+id/etProfileClientEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -163,7 +163,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientDateBirth"
+                        android:id="@+id/etProfileClientDateBirth"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -265,7 +265,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientZipCode"
+                        android:id="@+id/etProfileClientZipCode"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -289,7 +289,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientState"
+                        android:id="@+id/etProfileClientState"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -312,7 +312,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientCity"
+                        android:id="@+id/etProfileClientCity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -335,7 +335,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientStreet"
+                        android:id="@+id/etProfileClientStreet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -358,7 +358,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientOutsideNumber"
+                        android:id="@+id/etProfileClientOutsideNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -381,7 +381,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etSingUpActivityClientInnerNumber"
+                        android:id="@+id/etProfileClientInnerNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
