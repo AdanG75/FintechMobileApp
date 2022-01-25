@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
-    tools:context=".DepositFragment">
+    tools:context=".DepositClientFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/small_margin"
                         android:layout_marginTop="@dimen/small_middle_margin"
-                        android:text="@string/depositor_name"
+                        android:text="@string/paypal_account"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/h2_text"
                         android:textStyle="bold">
@@ -119,7 +119,32 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
-                        android:hint="@string/depositor_name"
+                        android:hint="@string/hint_paypal"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_middle_margin"
+                        android:text="@string/password_instruction_paypal"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etDepositMovementClientPaypalPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
                         android:padding="@dimen/small_margin"
                         android:textSize="@dimen/edit_text_size">
 
@@ -218,5 +243,8 @@
         </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
+
+
+
 
 </FrameLayout>

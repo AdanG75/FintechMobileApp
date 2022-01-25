@@ -23,6 +23,8 @@
     <string name="failure_movement">Se ha producido un error al realizar el movimiento. Favor de intentarlo nuevamente.</string>
 
     <string name="password_instruction">Escriba la contaseña del establecimiento:</string>
+    <string name="password_instruction_client">Escriba su contaseña:</string>
+    <string name="password_instruction_paypal">Escriba la contaseña de Paypal</string>
 
     <string name="market_password">Contraseña del Establecimiento</string>
     <string name="branch_password">Contraseña de la Sucursal</string>
