@@ -64,14 +64,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_margin="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
             android:background="@color/background"
+
             android:elevation="@dimen/middle_elevation"
+            app:itemIconSize="@dimen/nav_icon_size"
             app:itemIconTint="@drawable/nav_color"
             app:itemTextColor="@drawable/nav_color"
-            app:itemIconSize="@dimen/nav_icon_size"
-
-            app:menu="@menu/bnv_market_menu">
+            app:menu="@menu/bnv_client_menu">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -79,8 +82,8 @@
             android:id="@+id/fragmentContentClientMain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/bnvClientMenu"
-            android:layout_above="@id/lyMovementsClientActivity">
+            android:layout_above="@id/lyMovementsClientActivity"
+            android:layout_below="@id/bnvClientMenu">
 
         </fragment>
 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_client"
+    app:startDestination="@id/creditClientFragment">
+
+    <fragment
+        android:id="@+id/creditClientFragment"
+        android:name="com.example.fintecha75.CreditClientFragment"
+        android:label="fragment_credit_client"
+        tools:layout="@layout/fragment_credit_client" >
+        <action
+            android:id="@+id/action_creditClientFragment_to_receiptsClientFragment"
+            app:destination="@id/receiptsClientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiptsClientFragment"
+        android:name="com.example.fintecha75.ReceiptsClientFragment"
+        android:label="fragment_receipts_client"
+        tools:layout="@layout/fragment_receipts_client" >
+        <action
+            android:id="@+id/action_receiptsClientFragment_to_profileClientFragment"
+            app:destination="@id/profileClientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileClientFragment"
+        android:name="com.example.fintecha75.ProfileClientFragment"
+        android:label="fragment_profile_client"
+        tools:layout="@layout/fragment_profile_client" >
+        <action
+            android:id="@+id/action_profileClientFragment_to_changeFingerprintFragmentDialogClient"
+            app:destination="@id/changeFingerprintFragmentDialogClient" />
+        <action
+            android:id="@+id/action_profileClientFragment_to_changePasswordFragmentDialogClient"
+            app:destination="@id/changePasswordFragmentDialogClient" />
+        <action
+            android:id="@+id/action_profileClientFragment_to_changePaypalFragmentDialogClient"
+            app:destination="@id/changePaypalFragmentDialogClient" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/changePasswordFragmentDialogClient"
+        android:name="com.example.fintecha75.ChangePasswordDialogFragment"
+        android:label="fragment_change_password_dialog"
+        tools:layout="@layout/fragment_change_password_dialog" />
+
+    <dialog
+        android:id="@+id/changeFingerprintFragmentDialogClient"
+        android:name="com.example.fintecha75.ChangeFingerprintDialogFragment"
+        android:label="fragment_change_fingerprint_dialog"
+        tools:layout="@layout/fragment_change_fingerprint_dialog" />
+
+    <dialog
+        android:id="@+id/changePaypalFragmentDialogClient"
+        android:name="com.example.fintecha75.ChangePaypalAccountFragment"
+        android:label="fragment_change_paypal_account"
+        tools:layout="@layout/fragment_change_paypal_account" />
+</navigation>

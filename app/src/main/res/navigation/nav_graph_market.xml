@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_market"
+    app:startDestination="@id/creditMarketFragment">
+
+    <fragment
+        android:id="@+id/creditMarketFragment"
+        android:name="com.example.fintecha75.CreditMarketFragment"
+        android:label="fragment_credit_market"
+        tools:layout="@layout/fragment_credit_market" >
+        <action
+            android:id="@+id/action_creditMarketFragment_to_receiptsMarketFragment"
+            app:destination="@id/receiptsMarketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiptsMarketFragment"
+        android:name="com.example.fintecha75.ReceiptsMarketFragment"
+        android:label="fragment_receipts_market"
+        tools:layout="@layout/fragment_receipts_market" >
+        <action
+            android:id="@+id/action_receiptsMarketFragment_to_profileMarketFragment"
+            app:destination="@id/profileMarketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileMarketFragment"
+        android:name="com.example.fintecha75.ProfileMarketFragment"
+        android:label="fragment_profile_market"
+        tools:layout="@layout/fragment_profile_market" >
+        <action
+            android:id="@+id/action_profileMarketFragment_to_checkPasswordFragmentDialog"
+            app:destination="@id/checkPasswordFragmentDialogMarket" />
+        <action
+            android:id="@+id/action_profileMarketFragment_to_changePasswordFragmentDialog"
+            app:destination="@id/changePasswordFragmentDialogClient" />
+        <action
+            android:id="@+id/action_profileMarketFragment_to_changePaypalFragmentDialog"
+            app:destination="@id/changePaypalFragmentDialogClient" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/checkPasswordFragmentDialogMarket"
+        android:name="com.example.fintecha75.CheckPasswordDialogFragment"
+        android:label="fragment_check_password_dialog"
+        tools:layout="@layout/fragment_check_password_dialog" />
+
+    <dialog
+        android:id="@+id/changePasswordFragmentDialogClient"
+        android:name="com.example.fintecha75.ChangePasswordDialogFragment"
+        android:label="fragment_change_password_dialog"
+        tools:layout="@layout/fragment_change_password_dialog" />
+
+    <dialog
+        android:id="@+id/changePaypalFragmentDialogClient"
+        android:name="com.example.fintecha75.ChangePaypalAccountFragment"
+        android:label="fragment_change_paypal_account"
+        tools:layout="@layout/fragment_change_paypal_account" />
+</navigation>
