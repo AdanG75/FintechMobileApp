@@ -3,58 +3,58 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_movement_market"
-    app:startDestination="@id/optionMovementsFragmentMarket">
+    app:startDestination="@id/optionMovementsFragment">
 
     <fragment
-        android:id="@+id/optionMovementsFragmentMarket"
+        android:id="@+id/optionMovementsFragment"
         android:name="com.example.fintecha75.OptionMovementsFragment"
         android:label="fragment_option_movements"
         tools:layout="@layout/fragment_option_movements" >
         <action
             android:id="@+id/action_optionMovementsFragment_to_payFragment"
-            app:destination="@id/payFragmentMarket" />
+            app:destination="@id/payFragment" />
         <action
             android:id="@+id/action_optionMovementsFragment_to_depositFragment"
-            app:destination="@id/depositFragmentMarket" />
+            app:destination="@id/depositFragment" />
         <action
             android:id="@+id/action_optionMovementsFragment_to_transferFragment"
-            app:destination="@id/transferFragmentMarket" />
+            app:destination="@id/transferFragment" />
     </fragment>
     <fragment
-        android:id="@+id/payFragmentMarket"
+        android:id="@+id/payFragment"
         android:name="com.example.fintecha75.PayFragment"
         android:label="fragment_pay"
         tools:layout="@layout/fragment_pay" >
         <action
             android:id="@+id/action_payFragmentMarket_to_successfulOrFailureMovementFragmentDialogMarket"
-            app:destination="@id/successfulOrFailureMovementFragmentDialogMarket" />
+            app:destination="@id/successfulOrFailureMovementFragmentDialog" />
     </fragment>
     <fragment
-        android:id="@+id/depositFragmentMarket"
+        android:id="@+id/depositFragment"
         android:name="com.example.fintecha75.DepositFragment"
-        android:label="fragment_deposit_market"
-        tools:layout="@layout/fragment_deposit_market" >
+        android:label="fragment_deposit"
+        tools:layout="@layout/fragment_deposit" >
         <action
             android:id="@+id/action_depositFragmentMarket_to_successfulOrFailureMovementFragmentDialogMarket"
-            app:destination="@id/successfulOrFailureMovementFragmentDialogMarket" />
+            app:destination="@id/successfulOrFailureMovementFragmentDialog" />
     </fragment>
     <fragment
-        android:id="@+id/transferFragmentMarket"
+        android:id="@+id/transferFragment"
         android:name="com.example.fintecha75.TransferFragment"
         android:label="fragment_transfer"
         tools:layout="@layout/fragment_transfer" >
         <action
             android:id="@+id/action_transferFragmentMarket_to_successfulOrFailureMovementFragmentDialogMarket"
-            app:destination="@id/successfulOrFailureMovementFragmentDialogMarket" />
+            app:destination="@id/successfulOrFailureMovementFragmentDialog" />
     </fragment>
 
     <dialog
-        android:id="@+id/successfulOrFailureMovementFragmentDialogMarket"
+        android:id="@+id/successfulOrFailureMovementFragmentDialog"
         android:name="com.example.fintecha75.SuccessfulOrFailureMovementFragment"
         android:label="fragment_successful_or_failure_movement"
         tools:layout="@layout/fragment_successful_or_failure_movement" >
         <action
             android:id="@+id/action_successfulOrFailureMovementFragmentDialogMarket_to_optionMovementsFragmentMarket"
-            app:destination="@id/optionMovementsFragmentMarket" />
+            app:destination="@id/optionMovementsFragment" />
     </dialog>
 </navigation>

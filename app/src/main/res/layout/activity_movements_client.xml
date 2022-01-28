@@ -11,12 +11,12 @@
         android:id="@+id/rlMovementsClientActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/middle_margin"
-        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginTop="@dimen/middle_margin"
         android:layout_marginEnd="@dimen/middle_margin"
-        android:background="@drawable/shape_main_button"
-        android:layout_alignParentTop="true">
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="@drawable/shape_main_button">
 
         <ImageView
             android:id="@+id/ivMovementsClientActivityBackspace"
@@ -56,11 +56,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/small_margin"
-        android:layout_below="@id/rlMovementsClientActivity">
+        android:layout_below="@id/rlMovementsClientActivity"
+        android:layout_marginTop="@dimen/small_margin">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bnvClientMenu"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -69,7 +70,6 @@
             android:layout_marginEnd="@dimen/small_margin"
             android:layout_marginBottom="@dimen/small_margin"
             android:background="@color/background"
-
             android:elevation="@dimen/middle_elevation"
             app:itemIconSize="@dimen/nav_icon_size"
             app:itemIconTint="@drawable/nav_color"
@@ -80,10 +80,13 @@
 
         <fragment
             android:id="@+id/fragmentContentClientMain"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/lyMovementsClientActivity"
-            android:layout_below="@id/bnvClientMenu">
+            android:layout_below="@id/bnvClientMenu"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph_client">
 
         </fragment>
 
@@ -91,10 +94,10 @@
             android:id="@+id/lyMovementsClientActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_margin="@dimen/small_middle_margin"
-            android:orientation="horizontal"
             android:background="@drawable/shape_main_button"
-            android:layout_alignParentBottom="true">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/ivMovementsClientFilter"

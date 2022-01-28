@@ -60,7 +60,7 @@
                         </TextView>
 
                         <EditText
-                            android:id="@+id/etDepositMovementClientPaypalPassword"
+                            android:id="@+id/etDepositMovementPaypalPassword"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/small_middle_margin"

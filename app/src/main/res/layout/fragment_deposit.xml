@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:id="@+id/rlDepositMovementClient"
+            android:id="@+id/rlDepositMovement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -24,7 +24,7 @@
             android:background="@drawable/shape_main_button">
 
             <ImageView
-                android:id="@+id/ivDepositMovementClientBackspace"
+                android:id="@+id/ivDepositMovementBackspace"
                 android:layout_width="@dimen/width_app_icon_36"
                 android:layout_height="@dimen/height_app_icon_36"
                 android:layout_alignParentStart="true"
@@ -46,7 +46,7 @@
             </TextView>
 
             <ImageView
-                android:id="@+id/ivDepositMovementClientSettings"
+                android:id="@+id/ivDepositMovementSettings"
                 android:layout_width="@dimen/width_app_icon_36"
                 android:layout_height="@dimen/height_app_icon_36"
                 android:layout_alignParentEnd="true"
@@ -59,10 +59,10 @@
         </RelativeLayout>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cvDataDepositClient"
+            android:id="@+id/cvDataDeposit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/rlDepositMovementClient"
+            android:layout_below="@id/rlDepositMovement"
             android:layout_alignParentStart="true"
             android:layout_margin="@dimen/middle_margin"
             android:background="@color/mate_white"
@@ -90,7 +90,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etDepositMovementClientIdCredit"
+                        android:id="@+id/etDepositMovementIdCredit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -102,6 +102,7 @@
                     </EditText>
 
                     <TextView
+                        android:id="@+id/tvDepositMovementDepositorName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/small_margin"
@@ -109,19 +110,76 @@
                         android:text="@string/depositor_name"
                         android:textColor="@color/text_color"
                         android:textSize="@dimen/h2_text"
-                        android:textStyle="bold">
+                        android:textStyle="bold"
+                        android:visibility="gone">
 
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etDepositMovementClientPaypalAccount"
+                        android:id="@+id/etDepositMovementDepositorName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
                         android:background="@drawable/shape_edit_text"
                         android:hint="@string/depositor_name"
                         android:padding="@dimen/small_margin"
-                        android:textSize="@dimen/edit_text_size">
+                        android:textSize="@dimen/edit_text_size"
+                        android:visibility="gone">
+
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/tvDepositMovementPaypalAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_middle_margin"
+                        android:text="@string/paypal_account"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold"
+                        android:visibility="gone">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etDepositMovementPaypalAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/hint_paypal"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size"
+                        android:visibility="gone">
+
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/tvDepositMovementPaypalPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_middle_margin"
+                        android:text="@string/password_instruction_paypal"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/h2_text"
+                        android:textStyle="bold"
+                        android:visibility="gone">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etDepositMovementPaypalPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_middle_margin"
+                        android:background="@drawable/shape_edit_text"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/small_margin"
+                        android:textSize="@dimen/edit_text_size"
+                        android:visibility="gone">
 
                     </EditText>
 
@@ -138,7 +196,7 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/etDepositMovementClientAmount"
+                        android:id="@+id/etDepositMovementAmount"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/small_middle_margin"
@@ -162,7 +220,7 @@
                     </TextView>
 
                     <Button
-                        android:id="@+id/bDepositMovementClientConnectSensor"
+                        android:id="@+id/bDepositMovementConnectSensor"
                         android:layout_width="@dimen/middle_width_button"
                         android:layout_height="@dimen/middle_height_button"
                         android:layout_gravity="center"
@@ -175,7 +233,7 @@
 
 
                     <ImageView
-                        android:id="@+id/ivDepositMovementClientFingerprint"
+                        android:id="@+id/ivDepositMovementFingerprint"
                         android:layout_width="@dimen/width_fingerprint_image"
                         android:layout_height="@dimen/height_fingerprint_image"
                         android:layout_gravity="center"
@@ -184,7 +242,7 @@
                         android:src="@drawable/ic_fingerprint_24" />
 
                     <Button
-                        android:id="@+id/bDepositMovementClientCatchFingerprint"
+                        android:id="@+id/bDepositMovementCatchFingerprint"
                         android:layout_width="@dimen/middle_width_button"
                         android:layout_height="@dimen/middle_height_button"
                         android:layout_gravity="center"
@@ -196,7 +254,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/bDepositMovementClientDeposit"
+                        android:id="@+id/bDepositMovementDeposit"
                         android:layout_width="@dimen/big_width_button"
                         android:layout_height="@dimen/big_height_button"
                         android:layout_gravity="center"
