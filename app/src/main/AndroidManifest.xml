@@ -3,12 +3,13 @@
     package="com.example.fintecha75">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/main_icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/main_icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FintechA75">
+        android:theme="@style/Theme.FintechA75"
+        android:fullBackupContent="false">
         <activity
             android:name=".MovementsClientActivity"
             android:exported="false" />
@@ -30,7 +31,8 @@
         <activity android:name=".SingUpActivityClient" />
         <activity android:name=".LoginActivityMarket" />
         <activity android:name=".LoginActivityClient" />
-        <activity android:name=".StartActivity" >
+        <activity android:name=".StartActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
