@@ -34,29 +34,31 @@
 
     </TextView>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/ivStartActivityPersonButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/small_big_margin"
         android:layout_marginTop="@dimen/big_middle_margin"
+        android:background="@color/background"
         android:src="@drawable/ic_baseline_person_128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvStartActivityFirstTitle">
 
-    </ImageView>
+    </ImageButton>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/ivStartActivityMarketButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/big_middle_margin"
         android:layout_marginEnd="@dimen/small_big_margin"
+        android:background="@color/background"
         android:src="@drawable/ic_baseline_store_128"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvStartActivityFirstTitle">
 
-    </ImageView>
+    </ImageButton>
 
     <TextView
         android:layout_width="wrap_content"
