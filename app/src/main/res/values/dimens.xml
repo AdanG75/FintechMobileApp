@@ -42,9 +42,10 @@
     <dimen name="width_separator_slim_line">1dp</dimen>
     <dimen name="width_separator_line">2dp</dimen>
     <dimen name="height_separator_line">48dp</dimen>
-    <dimen name="nav_icon_size">30dp</dimen>
+    <dimen name="nav_icon_size">36dp</dimen>
     <dimen name="width_fingerprint_image">98dp</dimen>
     <dimen name="height_fingerprint_image">112dp</dimen>
+    <dimen name="height_bottom_menu">70dp</dimen>
 
     <!-- Text sizes-->
     <dimen name="big_detail_size_text">48sp</dimen>

@@ -57,14 +57,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/rlMovementsClientActivity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/small_margin">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bnvClientMenu"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height_bottom_menu"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginStart="@dimen/small_margin"
             android:layout_marginTop="@dimen/small_margin"
             android:layout_marginEnd="@dimen/small_margin"
@@ -85,6 +90,8 @@
             android:layout_height="match_parent"
             android:layout_above="@id/lyMovementsClientActivity"
             android:layout_below="@id/bnvClientMenu"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_graph_client">
 
@@ -94,6 +101,8 @@
             android:id="@+id/lyMovementsClientActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_margin="@dimen/small_middle_margin"
             android:background="@drawable/shape_main_button"
